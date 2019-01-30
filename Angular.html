@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"/>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    
+    <body>
+        <header class="header-background pastel-blue-background">
+            <div class="col-md-12">
+                <span>
+                    <nav class="navbar navbar-expand-lg sticky-top">
+                        <a class="navbar-brand gunmetal-text" href="#">Hello World</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link gunmetal-text" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link gunmetal-text" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle gunmetal-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled pastel-blue-text" href="#">Disabled</a>
+                            </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </span>
+            </div>
+        </header>
+
+        <div ng-app="" ng-controller="" class="container-fluid ghost-gray-background">
+            <div class="row col-md-12">
+                <p class="gunmetal-text col-md-8">
+                    <span>Name: </span>
+                    <input type="text" ng-model="name" class="col-md-8">
+                </p>
+                <div class="col-md-4">
+                    <span class="col-md-4 gunmetal-text">Your name is: </span>
+                    <span class="pastel-blue-text col-md-8" ng-bind="name"></span>
+                </div>
+                
+            </div>
+            <div ng-app="myApp" ng-controller="myCtrl">
+
+                First Name: <input type="text" ng-model="firstName"><br>
+                Last Name: <input type="text" ng-model="lastName"><br>
+                <br>
+                Full Name: {{firstName + " " + lastName}}
+                    
+            </div>
+                    
+            <script>
+                var app = angular.module('myApp', []);
+                app.controller('myCtrl', function($scope) {
+                    $scope.firstName= "John";
+                    $scope.lastName= "Doe";
+                });
+            </script>
+        </div>
+
+        <footer class="footer-background pastel-blue-background sticky-footer">
+            <span>This is the end</span>
+        </footer>
+
+        <!-- <script src="myCtrl.js"></script>
+        <script src="myApp.js"></script> -->
+
+    </body>
+</html>
