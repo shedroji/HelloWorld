@@ -9,6 +9,10 @@ body {
     color: #272838;
 }
 
+.body-padding {
+    padding-top: 3em;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
