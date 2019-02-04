@@ -31,7 +31,7 @@
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="custom.css"/>
+        <link rel="stylesheet" href="../css/custom.css"/>
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -39,25 +39,48 @@
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
     <body class="ghost-white-background">
 
         <div id="header"></div>
-    
+
         <div class="container pad-top">
-    
-            <div class="text-center">
-                <h1>I Can't Believe You Forgot Already!</h1>
-                <p class="lead">You're Screwed, Dude!</p>
-            </div>
-    
+
+            <h1 class="col-lg-offset-3">Contact Us</h1>
+
+            <form class="form-horizontal col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-1 col-sm-6 col-sm-offset-3" action="/action_page.php">
+                <div class="form-group">
+                    <label class="control-label" for="name">Name:*</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="text" placeholder="Enter Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email:*</label>
+                    <div class="">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="control-label">Comment:*</label>
+                    <div  class="">
+                        <textarea class="form-control" rows="5" id="comment" required></textarea>
+                    </div>
+                </div>
+                <span class="help-block pastel-blue-text">* = Required</span>
+                <div class="form-group"> 
+                    <div class="">
+                        <button type="submit" class="btn btn-custom btn-lg">Submit</button>
+                    </div>
+                </div>
+            </form>
+            
         </div>
 
         <div id="footer"></div>
-    
     
     </body>
 </html>
