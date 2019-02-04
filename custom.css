@@ -121,12 +121,6 @@ a:focus{
 }
 
 .btn-custom {
-    /* background-image: -webkit-linear-gradient(top,#272838 0,#3f404e 100%);
-    background-image: -o-linear-gradient(top,#272838 0,#3f404e 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#272838),to(#3f404e));
-    background-image: linear-gradient(to bottom,#272838 0,#3f404e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff272838', endColorstr='#ff3f404e', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); */
     background-image: rgb(63,64,78);
     background-image: -moz-linear-gradient(0deg, rgba(63,64,78,1) 0%, rgba(39,40,56,1) 50%, rgba(63,64,78,1) 100%);
     background-image: -webkit-linear-gradient(0deg, rgba(63,64,78,1) 0%, rgba(39,40,56,1) 50%, rgba(63,64,78,1) 100%);
@@ -147,6 +141,6 @@ a:focus{
     margin-top: 2em;
 }
 
-.pad-top-create-account {
+.pad-top {
     margin-top: 6em;
 }
