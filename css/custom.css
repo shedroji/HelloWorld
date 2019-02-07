@@ -55,6 +55,11 @@ a:focus{
     text-decoration: underline;
 }
 
+.footer li a {
+    color: #E8EBE4;
+    text-decoration: underline;
+}
+
 .starter-template {
     padding: 40px 15px;
     text-align: center;
