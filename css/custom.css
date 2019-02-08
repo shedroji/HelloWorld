@@ -15,7 +15,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -122,7 +122,7 @@ a:focus{
 
 .navbar-brand, .navbar-nav>li>a {
     text-shadow: none;
-    font-weight: 800;
+    font-weight: 200;
 }
 
 .container-center {
@@ -164,3 +164,13 @@ a:focus{
 .gi-3x{font-size: 3em !important;}
 .gi-4x{font-size: 4em !important;}
 .gi-5x{font-size: 5em !important;}
+
+.vr
+{
+    border-left: 1px solid;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 0;
+}
