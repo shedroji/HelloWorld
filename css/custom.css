@@ -1,12 +1,11 @@
 html {
     position: relative;
-    min-height: 100%;
 }
 
 body {
     /* Margin bottom by footer height */
     color: #272838;
-    height: auto;
+    /* height: auto; */
 }
 
 .body-padding {
@@ -159,11 +158,25 @@ a:focus{
     text-decoration: underline;
 }
 
-.gi-1-25x{font-size: 1.25em !important;}
-.gi-2x{font-size: 2em !important;}
-.gi-3x{font-size: 3em !important;}
-.gi-4x{font-size: 4em !important;}
-.gi-5x{font-size: 5em !important;}
+.gi-1-25x {
+    font-size: 1.25em !important;
+}
+
+.gi-2x {
+    font-size: 2em !important;
+}
+
+.gi-3x {
+    font-size: 3em !important;
+}
+
+.gi-4x {
+    font-size: 4em !important;
+}
+
+.gi-5x {
+    font-size: 5em !important;
+}
 
 .vr
 {
