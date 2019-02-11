@@ -25,12 +25,11 @@ body {
 }
 
 body > .container {
-    padding-top: 20px;
     /* margin-bottom: 28em; */
     padding-bottom: 80px;
 }
 .container .text-muted {
-    margin: 20px 0;
+    margin: 20px 15px 0;
 }
 
 .footer > .container {
