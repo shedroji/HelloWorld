@@ -189,15 +189,6 @@ a:focus{
     top: 0;
 }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
   /* Style the icon bar links */
 .icon-bar a {
     display: block;
@@ -237,3 +228,16 @@ a:focus{
     background: #bb0000;
     color: white;
 }
+
+/* @keyframes example {
+    0%   {background-color:#F9F8F8; left:400px; top:0px;} 
+    100% {background-color:#272838; left:0px; top:0px;}
+}/*
+
+  /* The element to apply the animation to */
+/*a.fa {
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+} */
